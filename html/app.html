@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Generator</title>
+    <link rel="stylesheet" href="../css/scratch.css">
+</head>
+<body>
+    <a href="../index.html" id="top">Home</a> <br>
+    <a href="../html/scratch.html">Wellness</a> <br>
+    <a href="../html/app.html">workout generator</a> <br>
+
+
+
+<div class="app-container">
+
+    <h1>🏋️ Workout Generator</h1>
+
+    <p>
+        Need a quick workout? Click the button below!
+    </p>
+
+    <button onclick="generateWorkout()">
+        Generate Workout
+    </button>
+
+    <p id="workout"></p>
+
+  
+
+</div>
+
+
+
+<script>
+function generateWorkout(){
+
+const workouts = [
+"20 Pushups 💪",
+"15 Squats 🦵",
+"10 Pullups 🔥",
+"30 Second Plank 🧱",
+"15 Lunges 🏃",
+"10 Burpees 😅",
+"20 Situps ⚡",
+"1 Minute Wall Sit 🏋️"
+];
+
+let random =
+Math.floor(Math.random()*workouts.length);
+
+document.getElementById("workout")
+.innerHTML =
+workouts[random];
+}
+</script>
+</body>
+</html>
